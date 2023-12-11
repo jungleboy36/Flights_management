@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/home"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Add"
+        android:icon="@drawable/baseline_add_24"
+        android:id="@+id/add"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Map"
+        android:icon="@drawable/baseline_map_24"
+        android:id="@+id/map"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:id="@+id/logout"
+        />
+</menu>

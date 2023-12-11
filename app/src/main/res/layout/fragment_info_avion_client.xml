@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoAvionClientFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aeoroport"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Infos vol"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:id="@+id/infoAvion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif-monospace"
+            />
+
+
+        <Button
+            android:id="@+id/reserver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reserver"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp" />
+        <Button
+            android:id="@+id/annuler_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="annuler"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAvionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aeoroport"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier un vol"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:layout_marginTop="30dp"
+
+            />
+        <EditText
+            android:id="@+id/depart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Départ"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif-monospace"
+            />
+        <EditText
+            android:id="@+id/arrive2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Arrivé"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:fontFamily="serif-monospace"
+
+            />
+        <EditText
+            android:id="@+id/datedepart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Date départ"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:inputType="date"
+            android:fontFamily="serif-monospace"
+            />
+        <EditText
+            android:id="@+id/heuredepart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Heure départ"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:inputType="datetime"
+            android:fontFamily="serif-monospace"
+
+            />
+        <EditText
+            android:id="@+id/heurearrive2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Heure Arrivé"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="datetime"
+            android:fontFamily="serif-monospace"
+
+            />
+        <Button
+            android:id="@+id/modifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="modifier"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp" />
+        <Button
+            android:id="@+id/supprimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="supprimer"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" />
+        <Button
+            android:id="@+id/annuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="annuler"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
