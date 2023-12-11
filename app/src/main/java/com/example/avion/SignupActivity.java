@@ -61,7 +61,9 @@ public class SignupActivity extends AppCompatActivity {
         String confirmPassword = confirmPasswordEditText.getText().toString();
         Intent i = new Intent(SignupActivity.this,LoginActivity.class);
         // Add validation for username, email, and password as needed
-
+        if(username.isEmpty() || email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty())
+        Toast.makeText(this, "Please fill all the fields !", Toast.LENGTH_SHORT).show();
+        else
         if (password.equals(confirmPassword)) {
             mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -119,6 +121,7 @@ public class SignupActivity extends AppCompatActivity {
             // Passwords do not match
             Toast.makeText(this, "Passwords do not match.", Toast.LENGTH_SHORT).show();
         }
+
     }
 
 }

@@ -62,6 +62,9 @@ public class LoginActivity extends AppCompatActivity {
         Intent adminUI = new Intent(this, MainActivityAdmin.class);
         Intent userUI = new Intent(this, MainActivityClient.class);
 
+        if(username.isEmpty() || password.isEmpty())
+            Toast.makeText(this, "Please fill all the fields !", Toast.LENGTH_SHORT).show();
+        else
         mAuth.signInWithEmailAndPassword(username, password)
                 .addOnCompleteListener(this, new OnCompleteListener<com.google.firebase.auth.AuthResult>() {
                     @Override

@@ -57,6 +57,10 @@ public class AddAvionFragment extends Fragment {
                 String timeArrival = heureArriveEditText.getText().toString();
                 String flightId = databaseReference.push().getKey();
                 // Create a Flight object
+
+                if(departure.isEmpty() || arrival.isEmpty() || dateDeparture.isEmpty() || timeArrival.isEmpty())
+                    Toast.makeText(getContext(), "Please fill all fields !", Toast.LENGTH_SHORT).show();
+                else{
                 Avion avion = new Avion(departure, arrival, dateDeparture, timeDeparture, timeArrival);
 
                 // Push the Flight object to the database
@@ -70,7 +74,7 @@ public class AddAvionFragment extends Fragment {
                 HomeFragment homeFragment = new HomeFragment();
                 transaction.replace(R.id.frame_layout, homeFragment);
                 transaction.addToBackStack(null);  // Add the transaction to the back stack
-                transaction.commit();
+                transaction.commit();}
             }
 
         });

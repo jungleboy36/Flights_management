@@ -151,8 +151,10 @@ public class UpdateAvionFragment extends Fragment {
                     String updatedDate = date.getText().toString();
                     String updatedHeureD = heureD.getText().toString();
                     String updatedHeureA = heureA.getText().toString();
-
-                    // Create a new Avion object with the updated data
+                    if(updatedDepart.isEmpty() || updatedArrive.isEmpty() || updatedDate.isEmpty() || updatedHeureA.isEmpty() || updatedHeureD.isEmpty())
+                        Toast.makeText(getContext(), "Please fill all the fields !", Toast.LENGTH_SHORT).show();
+                    else{
+                        // Create a new Avion object with the updated data
                     Avion updatedFlight = new Avion(updatedDepart, updatedArrive, updatedDate, updatedHeureD, updatedHeureA);
 
                     // Update the flight in the database
@@ -179,7 +181,7 @@ public class UpdateAvionFragment extends Fragment {
                                     // Handle failure to update the flight
                                     Toast.makeText(requireContext(), "Failed to update flight", Toast.LENGTH_SHORT).show();
                                 }
-                            });
+                            });}
                 } else {
                     // Handle the case where the UID is null or empty
                     Toast.makeText(requireContext(), "Flight UID is invalid", Toast.LENGTH_SHORT).show();
